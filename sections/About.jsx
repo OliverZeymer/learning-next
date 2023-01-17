@@ -39,7 +39,6 @@ const About = () => (
         <BsArrowDown size={28} />
       </motion.div>
     </motion.div>
-    About section
   </section>
 );
 
