@@ -3,26 +3,31 @@ export const exploreWorlds = [
     id: "world-1",
     imgUrl: "/planet-01.png",
     title: "The Hogwarts",
+    description: "The Hogwarts is a school of magic and wizardry in the Harry Potter series. It is located in Scotland, and is the only school of magic in the world.",
   },
   {
     id: "world-2",
     imgUrl: "/planet-02.png",
     title: "The Upside Down",
+    description: "The Upside Down is a parallel dimension that is the opposite of the real world. It is a dark, twisted, and dangerous place, and is home to the Demogorgon.",
   },
   {
     id: "world-3",
     imgUrl: "/planet-03.png",
     title: "Kadirojo Permai",
+    description: "Kadirojo Permai is a village in the district of Kadirojo, Kebumen Regency, Central Java, Indonesia. The village is located on the slopes of Mount Merapi.",
   },
   {
     id: "world-4",
     imgUrl: "/planet-04.png",
     title: "Paradise Island",
+    description: "Paradise Island is a fictional island in the Attack on Titan series. It is located in the South Pacific Ocean, and is the home of the Eldians.",
   },
   {
     id: "world-5",
     imgUrl: "/planet-05.png",
     title: "Hawkins Labs",
+    description: "Hawkins National Laboratory is a fictional research facility in the Netflix series Stranger Things. It is located in Hawkins, Indiana, and is run by Dr. Martin Brenner.",
   },
 ];
 
@@ -36,14 +41,12 @@ export const newFeatures = [
   {
     imgUrl: "/vrpano.svg",
     title: "A new world",
-    subtitle:
-      "we have the latest update with new world for you to try never mind",
+    subtitle: "we have the latest update with new world for you to try never mind",
   },
   {
     imgUrl: "/headset.svg",
     title: "More realistic",
-    subtitle:
-      "In the latest update, your eyes are narrow, making the world more realistic than ever",
+    subtitle: "In the latest update, your eyes are narrow, making the world more realistic than ever",
   },
 ];
 
@@ -51,20 +54,17 @@ export const insights = [
   {
     imgUrl: "/planet-06.png",
     title: "The launch of the Metaverse makes Elon musk ketar-ketir",
-    subtitle:
-      "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
+    subtitle: "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
   },
   {
     imgUrl: "/planet-07.png",
     title: "7 tips to easily master the madness of the Metaverse",
-    subtitle:
-      "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
+    subtitle: "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
   },
   {
     imgUrl: "/planet-08.png",
     title: "With one platform you can explore the whole world virtually",
-    subtitle:
-      "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
+    subtitle: "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
   },
 ];
 

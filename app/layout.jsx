@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+import "../styles/globals.scss";
+import "../styles/scrollbar.scss";
 
 const RootLayout = ({ children }) => (
   <html lang="en">

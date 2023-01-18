@@ -1,13 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  background: #1a232e;
+  color: #c7c7c7;
 }
 
 .gradient-01 {
@@ -25,12 +29,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
+  background: linear-gradient(97.86deg, #a509ff 0%, #34acc7 53.65%, #a134c7 100%);
 }
 
 .gradient-02 {
@@ -77,11 +76,7 @@
 }
 
 .gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .feedback-gradient {
@@ -104,4 +99,12 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+
+.hamburger-react {
+  z-index: 41;
+}
+
+img {
+  user-select: none;
 }
