@@ -1,12 +1,12 @@
-import { BsSearch, BsFilter } from "react-icons/bs";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import SearchCat from "./SearchCat";
-import BackgroundBlur from "./BackgroundBlur";
+import { BsSearch, BsFilter } from "react-icons/bs"
+import { AnimatePresence, motion } from "framer-motion"
+import { useState } from "react"
+import SearchCat from "./SearchCat"
+import BackgroundBlur from "./BackgroundBlur"
 
 const Search = ({ isSearchOpen, setIsSearchOpen }) => {
-  const [openFilter, setOpenFilter] = useState(false);
-  const [value, setValue] = useState("");
+  const [openFilter, setOpenFilter] = useState(false)
+  const [value, setValue] = useState("")
   return (
     <BackgroundBlur isOpen={isSearchOpen} setIsOpen={setIsSearchOpen}>
       <motion.div
@@ -43,13 +43,13 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
               }}
               exit={{ opacity: 0 }}
               className="flex flex-col max-h-96 overflow-y-auto overflow-x-hidden border border-slate-300 bg-slate-100 rounded-lg">
-              <SearchCat cat="worlds" search={value} />
+              <SearchCat cat="worlds" setIsOpen={setIsSearchOpen} search={value} />
             </motion.section>
           )}
         </AnimatePresence>
       </motion.div>
     </BackgroundBlur>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search
