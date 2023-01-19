@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const SearchItem = ({ item, setIsOpen, cat, index }) => {
   return (
@@ -24,18 +24,18 @@ const SearchItem = ({ item, setIsOpen, cat, index }) => {
       }}
       key={item.id}
       layout
-      className="p-4 border-b max-h-16 border-b-primary-black/25 cursor-pointer flex items-center relative sm:hover:bg-slate-200 transition-colors">
+      className="p-4 text-white border-b-2 max-h-16 border-b-secondary-white/25 last-of-type:border-b-0 hover:bg-black/20 cursor-pointer flex items-center relative transition-colors">
       <Link
         onClick={() => {
-          setIsOpen(false)
+          setIsOpen(false);
         }}
         className="flex items-center justify-between w-full"
         href={`/${cat}/${item.id}`}>
-        <p className="font-bold text-primary-black">{item.title}</p>
+        <p className="font-bold">{item.title}</p>
         <img src={item.imgUrl} alt="" className="w-12 h-12 ml-auto object-cover" />
       </Link>
     </motion.li>
-  )
-}
+  );
+};
 
-export default SearchItem
+export default SearchItem;

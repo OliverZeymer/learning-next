@@ -1,12 +1,12 @@
-import { BsSearch, BsFilter } from "react-icons/bs"
-import { AnimatePresence, motion } from "framer-motion"
-import { useState } from "react"
-import SearchCat from "./SearchCat"
-import BackgroundBlur from "./BackgroundBlur"
+import { BsSearch, BsFilter } from "react-icons/bs";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import SearchCategory from "./SearchCategory";
+import BackgroundBlur from "./BackgroundBlur";
 
 const Search = ({ isSearchOpen, setIsSearchOpen }) => {
-  const [openFilter, setOpenFilter] = useState(false)
-  const [value, setValue] = useState("")
+  const [openFilter, setOpenFilter] = useState(false);
+  const [value, setValue] = useState("");
   return (
     <BackgroundBlur isOpen={isSearchOpen} setIsOpen={setIsSearchOpen}>
       <motion.div
@@ -19,16 +19,10 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
           transition: { duration: 0.2 },
         }}
         className="fixed top-1/3 flex flex-col gap-4">
-        <label className="flex items-center gap-4 p-2 pl-4 bg-slate-100 border border-slate-300 rounded-lg">
-          <BsSearch className="text-primary-black" />
-          <input
-            autoFocus
-            type="text"
-            className="w-[75vw] sm:w-[30vw] text-base bg-transparent focus:outline-none text-primary-black"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          />
-          <button className={`text-primary-black p-2 rounded transition ${openFilter && `!text-white bg-primary-black`}`} onClick={() => setOpenFilter(!openFilter)}>
+        <label className="flex items-center gap-4 p-2 pl-4 bg-primary-black border border-black rounded-lg">
+          <BsSearch className="text-white" />
+          <input autoFocus type="text" className="w-[75vw] sm:w-[30vw] text-base bg-transparent focus:outline-none text-white" value={value} onChange={(e) => setValue(e.target.value)} />
+          <button className={`text-white p-2 rounded transition ${openFilter && `!text-primary-black bg-white`}`} onClick={() => setOpenFilter(!openFilter)}>
             <BsFilter />
           </button>
         </label>
@@ -42,14 +36,14 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
                 transition: { duration: 0.5, ease: "easeOut" },
               }}
               exit={{ opacity: 0 }}
-              className="flex flex-col max-h-96 overflow-y-auto overflow-x-hidden border border-slate-300 bg-slate-100 rounded-lg">
-              <SearchCat cat="worlds" setIsOpen={setIsSearchOpen} search={value} />
+              className="flex flex-col max-h-96 overflow-y-auto overflow-x-hidden border border-black bg-primary-black rounded-lg">
+              <SearchCategory cat="worlds" setIsOpen={setIsSearchOpen} search={value} />
             </motion.section>
           )}
         </AnimatePresence>
       </motion.div>
     </BackgroundBlur>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

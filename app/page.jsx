@@ -1,8 +1,8 @@
-import { Footer } from "../components"
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from "../sections"
+import { Footer } from "../components";
+import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from "../sections";
 
 const Home = () => (
-  <div className="bg-primary-black overflow-hidden">
+  <>
     <Hero />
     <div className="relative">
       <About />
@@ -21,7 +21,7 @@ const Home = () => (
       <Feedback />
     </div>
     <Footer />
-  </div>
-)
+  </>
+);
 
-export default Home
+export default Home;

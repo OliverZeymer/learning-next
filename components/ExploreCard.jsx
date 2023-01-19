@@ -1,14 +1,14 @@
-"use client"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { fadeIn } from "../utils/motion"
-import { useRouter } from "next/navigation"
+"use client";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { fadeIn } from "../utils/motion";
+import { useRouter } from "next/navigation";
 
 const ExploreCard = ({ id, imgUrl, title, index, activeCard, handleClick }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.4, 0.75)}
       className={`
     relative ${
       activeCard === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
@@ -20,15 +20,15 @@ const ExploreCard = ({ id, imgUrl, title, index, activeCard, handleClick }) => {
       ) : (
         <motion.div
           onClick={() => router.push(`/worlds/${id}`)}
-          className="absolute bottom-0 p-8 justify-start w-full backdrop-blur flex-col bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.2)] hover:underline transition-all rounded-b-3xl">
+          className="absolute bottom-0 p-8 justify-start w-full backdrop-blur flex-col bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.2)] child:hover:underline transition-all rounded-b-3xl">
           <div className="w-16 h-16 rounded-3xl glassmorhphism mb-4">
             <img src="/headset.svg" alt="headset" className="w-1/2 h-1/2 object-contain" />
           </div>
-          <p className="font-bold text-lg leading-5 text-white uppercase lg:truncate">Enter the Metaverse</p>
+          <p className="font-bold text-lg leading-5 text-white uppercase lg:truncate !border-none !no-underline">Enter the Metaverse</p>
           <h2 className="mt-6 font-semibold sm:text-3xl text-2xl text-white lg:truncate">{title}</h2>
         </motion.div>
       )}
     </motion.div>
-  )
-}
-export default ExploreCard
+  );
+};
+export default ExploreCard;

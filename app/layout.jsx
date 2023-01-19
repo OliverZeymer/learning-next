@@ -1,6 +1,6 @@
-import { Navbar } from "../components"
-import "../styles/globals.scss"
-import "../styles/scrollbar.scss"
+import { Navbar } from "../components";
+import "../styles/globals.scss";
+import "../styles/scrollbar.scss";
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
@@ -9,9 +9,9 @@ const RootLayout = ({ children }) => (
     </head>
     <body>
       <Navbar />
-      <main>{children}</main>
+      <main className="bg-primary-black overflow-hidden">{children}</main>
     </body>
   </html>
-)
+);
 
-export default RootLayout
+export default RootLayout;

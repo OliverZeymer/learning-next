@@ -1,14 +1,11 @@
 "use client";
-
 import { motion } from "framer-motion";
-import Link from "next/link";
-
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-    <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.innerWidth} mx-auto flex flex-col`}>
+    <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.innerWidth} flex flex-col`}>
       <h1 className="flex justify-center items-center flex-col relative z-10  select-none">
         <motion.span variants={textVariant(0.1)} className={styles.heroHeading}>
           Metaverse
