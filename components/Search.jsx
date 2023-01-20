@@ -19,7 +19,7 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
           transition: { duration: 0.2 },
         }}
         className="fixed top-1/3 flex flex-col gap-4">
-        <label className="flex items-center gap-4 p-2 pl-4 bg-primary-black border border-black rounded-lg">
+        <label className="flex items-center gap-4 p-2 pl-4 bg-primary-black shadow-xl rounded-lg">
           <BsSearch className="text-white" />
           <input autoFocus type="text" className="w-[75vw] sm:w-[30vw] text-base bg-transparent focus:outline-none text-white" value={value} onChange={(e) => setValue(e.target.value)} />
           <button className={`text-white p-2 rounded transition ${openFilter && `!text-primary-black bg-white`}`} onClick={() => setOpenFilter(!openFilter)}>
@@ -36,7 +36,7 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
                 transition: { duration: 0.5, ease: "easeOut" },
               }}
               exit={{ opacity: 0 }}
-              className="flex flex-col max-h-96 overflow-y-auto overflow-x-hidden border border-black bg-primary-black rounded-lg">
+              className="flex flex-col max-h-96 overflow-y-auto overflow-x-hidden shadow-xl bg-primary-black rounded-lg">
               <SearchCategory cat="worlds" setIsOpen={setIsSearchOpen} search={value} />
             </motion.section>
           )}

@@ -1,5 +1,4 @@
 "use client";
-
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
