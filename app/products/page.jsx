@@ -10,8 +10,8 @@ const ProductsPage = async () => {
   const data = await getData(url);
   return (
     <div>
-      {data.products.map((item) => (
-        <div>
+      {data.products.map((item, index) => (
+        <div key={index}>
           <h1>{item.title}</h1>
           <p>{item.description}</p>
           <img src={item.images[0]} alt="" />
