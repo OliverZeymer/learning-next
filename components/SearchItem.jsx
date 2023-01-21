@@ -25,7 +25,7 @@ const SearchItem = ({ item, setIsOpen, cat, index }) => {
       }}
       key={item.id}
       layout
-      className="p-4 text-white border-b-2 max-h-16 border-b-secondary-white/25 last-of-type:border-b-0 hover:bg-black/20 cursor-pointer flex items-center relative transition-colors">
+      className="p-4 text-white border-b-2 max-h-16 border-b-secondary-white/25 last-of-type:border-b-0 sm:hover:bg-black/20 cursor-pointer flex items-center relative transition-colors">
       <Link
         onClick={() => {
           setIsOpen(false);

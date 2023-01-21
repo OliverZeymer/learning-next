@@ -8,8 +8,8 @@ export default function NavLink({ href, children, setIsMenuOpen }) {
       onClick={() => setIsMenuOpen(false)}
       className={
         pathname === href
-          ? `flex items-center w-full justify-start px-10 py-4 bg-primary-blue hover:bg-primary-blue/80 transition-colors rounded-3xl`
-          : `flex items-center w-full justify-start px-10 py-4 hover:bg-primary-blue/80 transition-colors rounded-3xl`
+          ? `flex items-center w-full justify-start px-10 py-4 bg-primary-blue sm:hover:bg-primary-blue/80 transition-colors rounded-3xl`
+          : `flex items-center w-full justify-start px-10 py-4 sm:hover:bg-primary-blue/80 transition-colors rounded-3xl`
       }
       href={href}>
       {children}

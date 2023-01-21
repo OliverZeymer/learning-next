@@ -11,7 +11,7 @@ const WorldPage = ({ params }) => {
           <img src={world.imgUrl} className="rounded-3xl" alt="" />
           <button
             type="button"
-            className="py-4 tracking-wider font-bold uppercase text-white px-10 w-fit self-center mt-6 text-xl bg-gradient-to-r from-indigo-700 to-violet-700 hover:scale-110 transition-all rounded-full">
+            className="py-4 tracking-wider font-bold uppercase text-white px-10 w-fit self-center mt-6 text-xl bg-gradient-to-r from-indigo-700 to-violet-700 sm:hover:scale-110 transition-all rounded-full">
             explore world
           </button>
         </div>

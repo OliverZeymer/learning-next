@@ -15,6 +15,7 @@ const Feedback = () => (
       }}
       className={`${styles.innerWidth} lg:flex-row gap-6 flex flex-col`}>
       <motion.div
+        viewport={{ once: true }}
         variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.5] lg:max-w-sm flex justify-end flex-col gradient-05 sm:p-8
         p-4 rounded-[32px] border border-[#6a6a6a] relative">
@@ -28,9 +29,10 @@ const Feedback = () => (
           world. "
         </p>
       </motion.div>
-      <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className="relative flex-1 flex justify-center items-center">
+      <motion.div viewport={{ once: true }} variants={fadeIn("left", "tween", 0.2, 1)} className="hidden sm:flex relative flex-1 justify-center items-center">
         <img src="/planet-09.png" alt="planet-09" className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]" />
         <motion.div
+          viewport={{ once: true }}
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute
       -left-[10%] top-[3%]

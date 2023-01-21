@@ -8,6 +8,7 @@ const ExploreCard = ({ id, imgUrl, title, index, activeCard, handleClick }) => {
   const router = useRouter();
   return (
     <motion.div
+      viewport={{ once: true }}
       variants={fadeIn("right", "spring", index * 0.4, 0.75)}
       className={`
     relative ${
@@ -20,12 +21,12 @@ const ExploreCard = ({ id, imgUrl, title, index, activeCard, handleClick }) => {
       ) : (
         <motion.div
           onClick={() => router.push(`/worlds/${id}`)}
-          className="absolute bottom-0 p-8 justify-start w-full backdrop-blur flex-col bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.2)] child:hover:underline transition-all rounded-b-3xl">
-          <div className="w-16 h-16 rounded-3xl glassmorhphism mb-4">
+          className="absolute bottom-0 p-4 lg:p-8 justify-start w-full backdrop-blur flex-col bg-[rgba(0,0,0,0.5)] sm:hover:bg-[rgba(0,0,0,0.2)] child:sm:hover:underline transition-all rounded-b-3xl">
+          <div className="w-16 h-16 rounded-3xl glassmorphism mb-4 flex items-center justify-center">
             <img src="/headset.svg" alt="headset" className="w-1/2 h-1/2 object-contain" />
           </div>
           <p className="font-bold text-lg leading-5 text-white uppercase lg:truncate !border-none !no-underline">Enter the Metaverse</p>
-          <h2 className="mt-6 font-semibold sm:text-3xl text-2xl text-white lg:truncate">{title}</h2>
+          <h2 className="mt-4 lg:mt-6 font-semibold sm:text-3xl text-2xl text-white lg:truncate">{title}</h2>
         </motion.div>
       )}
     </motion.div>

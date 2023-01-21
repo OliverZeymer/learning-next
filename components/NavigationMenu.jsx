@@ -34,9 +34,9 @@ const NavigationMenu = ({ setIsMenuOpen }) => (
       exit={{ x: "-100%" }}
       transition={{ duration: 0.3 }}
       className=" 
-    select-none fixed top-0 left-0 h-screen w-screen md:w-auto backdrop-blur-3xl bg-black/20 z-40 shadow-2xl rounded-r-3xl px-10 pt-24 pb-24 flex flex-col gap-8 items-center text-2xl font-bold text-white ">
+    select-none fixed top-0 left-0 h-screen w-screen md:w-auto backdrop-blur-3xl bg-black/20 z-40 shadow-2xl md:rounded-r-3xl px-10 pt-24 pb-24 flex flex-col gap-8 items-center text-2xl font-bold text-white ">
       <h2 className="text-3xl">
-        <Link onClick={() => setIsMenuOpen(false)} href="/">
+        <Link onClick={() => setIsMenuOpen(false)} href="">
           METAVERSUS
         </Link>
       </h2>
@@ -44,7 +44,7 @@ const NavigationMenu = ({ setIsMenuOpen }) => (
         <li key={index} className="w-full rounded-3xl">
           <NavLink
             setIsMenuOpen={setIsMenuOpen}
-            className="flex items-center w-full justify-start px-10 py-4 bg-primary-blue hover:bg-primary-blue/80 transition-colors rounded-3xl"
+            className="flex items-center w-full justify-start px-10 py-4 bg-primary-blue sm:hover:bg-primary-blue/80 transition-colors rounded-3xl"
             href={link.href}>
             <link.icon className="mr-4" />
             {link.title}

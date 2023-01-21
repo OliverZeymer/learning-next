@@ -1,4 +1,4 @@
-import { Navbar } from "../components";
+import { Footer, Navbar } from "../sections";
 import "../styles/globals.scss";
 import "../styles/scrollbar.scss";
 const RootLayout = ({ children }) => (
@@ -10,6 +10,7 @@ const RootLayout = ({ children }) => (
     <body>
       <Navbar />
       <main className="bg-primary-black overflow-hidden">{children}</main>
+      <Footer />
     </body>
   </html>
 );
