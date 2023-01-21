@@ -19,7 +19,6 @@ const BackgroundBlur = ({ children, isOpen, setIsOpen }) => {
     <motion.div
       onKeyDown={(e) => {
         if (e.keyCode === 27 || e.key === "Escape" || e.key === "Esc") {
-          console.log(e);
           setIsOpen(false);
         }
       }}
