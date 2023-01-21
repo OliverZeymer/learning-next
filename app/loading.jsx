@@ -1,6 +1,6 @@
 "use client";
-import "../../styles/loading.scss";
-export default function WorldsLoadingPage() {
+import "../styles/loading.scss";
+export default function LoadingPage() {
   return (
     <div className="loader-container">
       <div className="content">

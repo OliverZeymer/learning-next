@@ -1,3 +1,5 @@
+import LoadingPage from "../loading";
+
 async function getData(url) {
   const res = await fetch(url);
   const data = await res.json();
@@ -10,6 +12,7 @@ const ProductsPage = async () => {
   const data = await getData(url);
   return (
     <div>
+      <LoadingPage />
       {data.products.map((item, index) => (
         <div key={index}>
           <h1>{item.title}</h1>

@@ -21,7 +21,7 @@ const Search = ({ isSearchOpen, setIsSearchOpen }) => {
         className="fixed top-1/3 flex flex-col gap-4">
         <label className="flex items-center gap-4 p-2 pl-4 bg-primary-black shadow-xl rounded-lg">
           <BsSearch className="text-white" />
-          <input autoFocus type="text" className="w-[75vw] sm:w-[30vw] text-base bg-transparent focus:outline-none text-white" value={value} onChange={(e) => setValue(e.target.value)} />
+          <input autoFocus type="text" className="w-[50vw] sm:w-[30vw] text-base bg-transparent focus:outline-none text-white" value={value} onChange={(e) => setValue(e.target.value)} />
           <button className={`text-white p-2 rounded transition ${openFilter && `!text-primary-black bg-white`}`} onClick={() => setOpenFilter(!openFilter)}>
             <BsFilter />
           </button>
