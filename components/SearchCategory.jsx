@@ -1,4 +1,3 @@
-"use client";
 import SearchItem from "./SearchItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { exploreWorlds } from "../constants";

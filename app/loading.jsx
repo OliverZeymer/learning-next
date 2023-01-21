@@ -1,4 +1,3 @@
-"use client";
 import "../styles/loading.scss";
 export default function LoadingPage() {
   return (

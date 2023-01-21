@@ -1,4 +1,3 @@
-"use client";
 import { BsSearch, BsFilter } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";

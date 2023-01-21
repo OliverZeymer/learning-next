@@ -1,7 +1,8 @@
+import styles from "../../styles";
 const SupportPage = () => {
   return (
-    <div>
-      <h1>Support Page</h1>
+    <div className={`${styles.innerWidth} h-screen w-screen text-center ${styles.paddings}`}>
+      <h1 className="text-6xl font-bold">Support Page</h1>
     </div>
   );
 };
