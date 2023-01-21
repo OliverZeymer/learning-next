@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   return (
-    <>
+    <header>
       <motion.nav
         variants={navVariants}
         initial="hidden"
@@ -33,7 +33,7 @@ const Navbar = () => {
       </motion.nav>
       <AnimatePresence>{isMenuOpen && <NavigationMenu setIsMenuOpen={setIsMenuOpen} />}</AnimatePresence>
       <AnimatePresence>{isSearchOpen && <Search isSearchOpen={isSearchOpen} setIsSearchOpen={setIsSearchOpen} />}</AnimatePresence>
-    </>
+    </header>
   );
 };
 
