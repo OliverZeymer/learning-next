@@ -35,11 +35,11 @@ const NavigationMenu = ({ setIsMenuOpen }) => (
       transition={{ duration: 0.3 }}
       className=" 
     select-none fixed top-0 left-0 h-screen w-screen md:w-auto backdrop-blur-3xl bg-black/20 z-40 shadow-2xl md:rounded-r-3xl px-10 pt-24 pb-24 flex flex-col gap-8 items-center text-2xl font-bold text-white ">
-      <h2 className="text-3xl">
+      <li className="text-3xl">
         <Link onClick={() => setIsMenuOpen(false)} href="">
           METAVERSUS
         </Link>
-      </h2>
+      </li>
       {NavigationLinks.map((link, index) => (
         <li key={index} className="w-full rounded-3xl">
           <NavLink

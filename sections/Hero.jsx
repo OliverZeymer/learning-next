@@ -11,9 +11,9 @@ const Hero = () => (
           Metaverse
         </motion.h1>
         <motion.div viewport={{ once: true }} variants={textVariant(0.2)} className="flex flex-row justify-center items-center">
-          <span className={styles.heroHeading}>Ma</span>
+          <p className={styles.heroHeading}>Ma</p>
           <div className={styles.heroDText} />
-          <span className={styles.heroHeading}>Ness</span>
+          <p className={styles.heroHeading}>Ness</p>
         </motion.div>
       </div>
 
