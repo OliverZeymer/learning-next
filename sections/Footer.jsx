@@ -6,7 +6,7 @@ import styles from "../styles";
 import { footerVariants } from "../utils/motion";
 
 const Footer = () => (
-  <motion.footer viewport={{ once: true }} variants={footerVariants} initial="hidden" animate="show" className={`${styles.paddings} py-8 relative`}>
+  <motion.footer viewport={{ once: true }} variants={footerVariants} initial="hidden" animate="show" className={`${styles.paddings} py-8 relative overflow-hidden lg:overflow-visible`}>
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
